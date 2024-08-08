@@ -1,0 +1,8 @@
+[CLS]' 국방기사 제목' [SEP] '그 외 기사 제목'
+
+국방기사 모두 = label 1
+그 외		    = label 0
+
+1. 기사 제목 무작위 크롤링
+2. label -> csv
+3. fine tunning
