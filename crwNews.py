@@ -175,3 +175,15 @@ newsUrls = instance.get_urls()
 texts = instance.crawling(newsUrls)
 data = instance.filtering(texts)
 instance.insert(data)
+
+# CREATE DATABASE news_db;
+
+# USE news_db;
+
+# CREATE TABLE news (
+#     title VARCHAR(255) PRIMARY KEY,
+#     newsroom VARCHAR(255),
+#     time VARCHAR(255),
+#     body TEXT
+# );
+# 이건 테이블 정의할 때
