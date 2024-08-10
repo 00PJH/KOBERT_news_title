@@ -1,0 +1,4 @@
+[ZoneTransfer]
+ZoneId=3
+ReferrerUrl=https://www.bigkinds.or.kr/v2/news/index.do
+HostUrl=https://www.bigkinds.or.kr/api/news/download.do

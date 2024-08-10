@@ -12,6 +12,7 @@ db = pymysql.connect(
 # title 개수
 sql = '''SELECT title 
 FROM news
+
 '''
 
 # Connection 객체로부터 cursor() 메서드를 호출하여 Cursor 객체를 가져옴
@@ -28,5 +29,9 @@ cursor.close()
 db.close()
 
 # 결과를 pandas 데이터프레임으로 변환
-datas = pd.DataFrame(datas)
-datas.to_csv('./news_titles.csv', index = False)
+df = pd.DataFrame(datas)
+
+# label 0으로 지정
+df['label'] = 1
+
+df.to_csv('./news_titles_label1.csv', index = False)
